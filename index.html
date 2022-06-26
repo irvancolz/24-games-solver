@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">24 Games Solver</h1>
+        <h3 class="author">By Irvan Saharudin</h3>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h1 class="section-title">
+                Fill the input field below
+            </h1>
+            <form id="game-form">
+                <input type="number" min="1" max="9" id="firstNumber" required>
+                <input type="number" min="1" max="9" id="secondNumber" required>
+                <input type="number" min="1" max="9" id="thirdNumber" required>
+                <input type="number" min="1" max="9" id="fourthNumber" required>
+
+                <button type="submit" class="submit">check</button>
+                <button type="button" class="clear">clear</button>
+            </form>
+        </div>
+        <div class="answer-container">
+            <h1 class="section-title">possible results</h1>
+            <button class="trigger-btn">show results</button>
+            <div class="answer-list-container">
+                <ul class="answer-list">
+                    
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <script src="./app.js" defer></script>
+</body>
+</html>
