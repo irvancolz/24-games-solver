@@ -32,11 +32,11 @@ function getGameResults(curExprs, curNumb){
     const operator = ['+', '-', '*', '/'];
     // looping for the current expression
     for(let escNumb = curNumb; escNumb < starterValue.length; escNumb++ ){
-        // looping for choosing the operator
+        // looping for choosing the next value
        if(curNumb == 0){
         getGameResults(`${starterValue[escNumb]}`, curNumb + 1)
        }else{
-        for(let opr = 0; opr < operator.length; opr++){
+        for(let opr = 0; opr < starterValue.length; opr++){
             // check if there is a same value on the starter value
             const isDuplicate = searchSimiliarValue(starterValue);
             if(isDuplicate){
