@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Roboto:wght@300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    place-items: center;
+}
+header{
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header .title{
+    font-size: 3.5rem;
+}
+main{
+    width: 90vw;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.section-title{
+    width: 100%;
+    font-size: 2rem;
+}
+#game-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+#game-form input{
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 400;
+}
+#game-form .submit, .trigger-btn, .clear{
+    font-size: 1.75rem;
+    padding: .75rem 1.25rem;
+    border: 1px solid green;
+    background-color: rgb(154, 243, 154);
+    box-shadow: .25rem .25rem #000;
+    cursor: pointer;
+}
+#game-form .submit:active, .trigger-btn:active, .clear:active{
+    transform: translateY(.25rem);
+}
+.answer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.answer-container{
+    margin-top: 2rem;
+}
+.answer-list-container{
+    border: 1px solid #000;
+    width: 100%;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+}
+.answer{
+    width: 200px;
+    font-weight: 500;
+}
